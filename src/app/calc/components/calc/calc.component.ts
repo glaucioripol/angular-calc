@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { CalcService } from '../../services';
+
 @Component({
   selector: 'app-calc',
   templateUrl: './calc.component.html',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CalcComponent implements OnInit {
 
-  constructor() { }
+  constructor(private readonly calcService: CalcService) { }
 
   ngOnInit(): void {
   }

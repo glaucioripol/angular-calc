@@ -1,0 +1,54 @@
+// criar mixin para grids com template
+.calc {
+  background-color: #e0dedf;
+  display: grid;
+  height: 100vh;
+  place-items: center;
+  width: 100vw;
+
+  &__form {
+    padding: 1rem;
+    width: 30rem;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: -6px 8px 8px rgba(0, 0, 0, 0.2);
+
+    &__visor-n-clear {
+      display: grid;
+      gap: 0.5rem;
+      grid-template-columns: 0.76fr 0.24fr;
+
+      &__visor {
+        background-color: #000;
+        color: #fff;
+        font-size: 3rem;
+        padding: 0.5rem 0.25rem;
+        text-align: right;
+      }
+
+      &__clear {
+        background-color: #fea500;
+        color: #000;
+        font-size: 3rem;
+        text-align: center;
+      }
+
+      & + .calc__form__keyboard {
+        margin: 0.5rem 0 0;
+      }
+    }
+
+    &__keyboard {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.5rem;
+
+      &__key {
+        background-color: #272b2e;
+    border-radius: 0.5rem;
+        color: #fff;
+        padding: 1rem;
+      }
+    }
+  }
+}

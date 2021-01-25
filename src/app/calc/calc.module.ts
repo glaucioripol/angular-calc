@@ -2,13 +2,21 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { CalcComponent } from './components';
+import { CalcService } from './services';
 
 
 @NgModule({
-  declarations: [CalcComponent],
+  declarations: [
+    CalcComponent
+  ],
   imports: [
     CommonModule
   ],
-  exports: [CalcComponent]
+  providers: [
+    CalcService
+  ],
+  exports: [
+    CalcComponent
+  ]
 })
 export class CalcModule { }
