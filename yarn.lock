@@ -3133,6 +3133,14 @@ di@^0.0.1:
   resolved "https://registry.yarnpkg.com/di/-/di-0.0.1.tgz#806649326ceaa7caa3306d75d985ea2748ba913c"
   integrity sha1-gGZJMmzqp8qjMG112YXqJ0i6kTw=
 
+did-you-mean@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/did-you-mean/-/did-you-mean-0.0.1.tgz#8851ce82407903cb62c12cb6ad4f676921ccdec3"
+  integrity sha1-iFHOgkB5A8tiwSy2rU9naSHM3sM=
+  dependencies:
+    levenshtein "*"
+    underscore "*"
+
 diff@^4.0.1:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/diff/-/diff-4.0.2.tgz#60f3aecb89d5fae520c11aa19efc2bb982aade7d"
@@ -3989,6 +3997,14 @@ getpass@^0.1.1:
   integrity sha1-Xv+OPmhNVprkyysSgmBOi6YhSfo=
   dependencies:
     assert-plus "^1.0.0"
+
+git-commit-msg-linter@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/git-commit-msg-linter/-/git-commit-msg-linter-3.0.0.tgz#f7bffab647fe6f30a5634f644c0fe70a5861fb5b"
+  integrity sha512-0qaE7RMhXFHsub4PSpTS3+5QYGb5ck/XW6AQChCWjkMOQHfKjCCZ7VMxT8w0hqE2y+z6UbpcK5s/icgg5S+d1A==
+  dependencies:
+    chalk "^2.4.2"
+    did-you-mean "^0.0.1"
 
 glob-parent@^3.1.0:
   version "3.1.0"
@@ -5168,6 +5184,11 @@ less@3.12.2:
     mime "^1.4.1"
     native-request "^1.0.5"
     source-map "~0.6.0"
+
+levenshtein@*:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/levenshtein/-/levenshtein-1.0.5.tgz#3911737a9cb56da345d008f55782c6f138979ba3"
+  integrity sha1-ORFzepy1baNF0Aj1V4LG8TiXm6M=
 
 license-webpack-plugin@2.3.1:
   version "2.3.1"
@@ -8360,6 +8381,11 @@ ua-parser-js@0.7.21:
   version "0.7.21"
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.21.tgz#853cf9ce93f642f67174273cc34565ae6f308777"
   integrity sha512-+O8/qh/Qj8CgC6eYBVBykMrNtp5Gebn4dlGD/kKXVkJNDwyrAwSIqwz8CDf+tsAIWVycKcku6gIXJ0qwx/ZXaQ==
+
+underscore@*:
+  version "1.12.0"
+  resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.12.0.tgz#4814940551fc80587cef7840d1ebb0f16453be97"
+  integrity sha512-21rQzss/XPMjolTiIezSu3JAjgagXKROtNrYFEOWK109qY1Uv2tVjPTZ1ci2HgvQDA16gHYSthQIJfB+XId/rQ==
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"
