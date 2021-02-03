@@ -20,17 +20,24 @@
 
       &__visor {
         background-color: #000;
+        border-radius: 0.5rem;
         color: #fff;
         font-size: 3rem;
-        padding: 0.5rem 0.25rem;
+        padding: 0.5rem;
         text-align: right;
+        overflow: hidden;
       }
 
       &__clear {
         background-color: #fea500;
+        border-radius: 0.5rem;
         color: #000;
         font-size: 3rem;
         text-align: center;
+
+        &:hover {
+          background-color: rgba(254, 165, 0, 0.75);
+        }
       }
 
       & + .calc__form__keyboard {
@@ -48,6 +55,19 @@
         border-radius: 0.5rem;
         color: #fff;
         padding: 1rem;
+
+        &:hover {
+          background-color: rgba(39, 43, 46, 0.75);
+        }
+
+        &--operations {
+          background-color: #fea500;
+          color: #000;
+
+          &:hover {
+            background-color: rgba(254, 165, 0, 0.75);
+          }
+        }
       }
     }
   }

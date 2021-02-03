@@ -2,27 +2,34 @@
   <form class="calc__form">
 
     <div class="calc__form__visor-n-clear">
-      <div class="calc__form__visor-n-clear__visor">10 + 10</div>
-      <button class="calc__form__visor-n-clear__clear" type="button">C</button>
+      <div class="calc__form__visor-n-clear__visor">{{ display || 0 }}</div>
+      <button class="calc__form__visor-n-clear__clear" type="button" (click)="clearState()">C</button>
     </div>
 
     <div class="calc__form__keyboard">
-      <button class="calc__form__keyboard__key" type="button">7</button>
-      <button class="calc__form__keyboard__key" type="button">8</button>
-      <button class="calc__form__keyboard__key" type="button">9</button>
-      <button class="calc__form__keyboard__key" type="button">/</button>
-      <button class="calc__form__keyboard__key" type="button">4</button>
-      <button class="calc__form__keyboard__key" type="button">5</button>
-      <button class="calc__form__keyboard__key" type="button">6</button>
-      <button class="calc__form__keyboard__key" type="button">*</button>
-      <button class="calc__form__keyboard__key" type="button">1</button>
-      <button class="calc__form__keyboard__key" type="button">2</button>
-      <button class="calc__form__keyboard__key" type="button">3</button>
-      <button class="calc__form__keyboard__key" type="button">-</button>
-      <button class="calc__form__keyboard__key" type="button">0</button>
-      <button class="calc__form__keyboard__key" type="button">.</button>
-      <button class="calc__form__keyboard__key" type="button">=</button>
-      <button class="calc__form__keyboard__key" type="button">+</button>
+      <button class="calc__form__keyboard__key" type="button" (click)="addNumber('7')">7</button>
+      <button class="calc__form__keyboard__key" type="button" (click)="addNumber('8')">8</button>
+      <button class="calc__form__keyboard__key" type="button" (click)="addNumber('9')">9</button>
+      <button class="calc__form__keyboard__key calc__form__keyboard__key--operations" type="button"
+        (click)="defineOperation('/')">/</button>
+
+      <button class="calc__form__keyboard__key" type="button" (click)="addNumber('4')">4</button>
+      <button class="calc__form__keyboard__key" type="button" (click)="addNumber('5')">5</button>
+      <button class="calc__form__keyboard__key" type="button" (click)="addNumber('6')">6</button>
+      <button class="calc__form__keyboard__key calc__form__keyboard__key--operations" type="button"
+        (click)="defineOperation('*')">*</button>
+
+      <button class="calc__form__keyboard__key" type="button" (click)="addNumber('1')">1</button>
+      <button class="calc__form__keyboard__key" type="button" (click)="addNumber('2')">2</button>
+      <button class="calc__form__keyboard__key" type="button" (click)="addNumber('3')">3</button>
+      <button class="calc__form__keyboard__key calc__form__keyboard__key--operations" type="button"
+        (click)="defineOperation('-')">-</button>
+
+      <button class="calc__form__keyboard__key" type="button" (click)="addNumber('0')">0</button>
+      <button class="calc__form__keyboard__key" type="button" (click)="defineOperation('.')">.</button>
+      <button class="calc__form__keyboard__key" type="button" (click)="calculate()">=</button>
+      <button class="calc__form__keyboard__key calc__form__keyboard__key--operations" type="button"
+        (click)="defineOperation('+')">+</button>
     </div>
   </form>
 </main>
