@@ -1,27 +1,29 @@
-# AngularCalc
+# Calculadora Usando Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.4.
+<figure style="display: grid; place-items: center;">
+  <img src="calc.png" width="500">
+</figure>
 
-## Development server
+## Como baixar ?
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+```sh
+git clone https://github.com/glaucioripol/angular-calc.git
+```
 
-## Code scaffolding
+## Quero Contribuir, como faço?
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Faça um fork aqui.
+- Padrões dos commits
+  - de preferência em inglês, mas caso não dê ok.
+  - usar o conventional commit <https://www.conventionalcommits.org/en/v1.0.0/>
+- Abrir um pull request e olharei com carinho
 
-## Build
+## bugs Conhecidos
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- [ ] não está adicionando floats, se tu tentar digitar `25.5` ele não adiciona o ponto e fica `255`.
 
-## Running unit tests
+## melhorias
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- [ ] deixar responsivo.
+- [ ] qualquer melhora visual é bem vinda.
+- [ ] adição de novas features.
