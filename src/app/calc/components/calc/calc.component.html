@@ -7,29 +7,29 @@
     </div>
 
     <div class="calc__form__keyboard">
-      <button class="calc__form__keyboard__key" type="button" (click)="addNumber('7')">7</button>
-      <button class="calc__form__keyboard__key" type="button" (click)="addNumber('8')">8</button>
-      <button class="calc__form__keyboard__key" type="button" (click)="addNumber('9')">9</button>
+      <button class="calc__form__keyboard__key" type="button" (click)="addNumber('7')" id="button-7">7</button>
+      <button class="calc__form__keyboard__key" type="button" (click)="addNumber('8')" id="button-8">8</button>
+      <button class="calc__form__keyboard__key" type="button" (click)="addNumber('9')" id="button-9">9</button>
       <button class="calc__form__keyboard__key calc__form__keyboard__key--operations" type="button"
-        (click)="defineOperation('/')">/</button>
+        (click)="defineOperation('/')" id="button-division">/</button>
 
-      <button class="calc__form__keyboard__key" type="button" (click)="addNumber('4')">4</button>
-      <button class="calc__form__keyboard__key" type="button" (click)="addNumber('5')">5</button>
-      <button class="calc__form__keyboard__key" type="button" (click)="addNumber('6')">6</button>
+      <button class="calc__form__keyboard__key" type="button" (click)="addNumber('4')" id="button-4">4</button>
+      <button class="calc__form__keyboard__key" type="button" (click)="addNumber('5')" id="button-5">5</button>
+      <button class="calc__form__keyboard__key" type="button" (click)="addNumber('6')" id="button-6">6</button>
       <button class="calc__form__keyboard__key calc__form__keyboard__key--operations" type="button"
-        (click)="defineOperation('*')">*</button>
+        (click)="defineOperation('*')" id="button-multiplication">*</button>
 
-      <button class="calc__form__keyboard__key" type="button" (click)="addNumber('1')">1</button>
-      <button class="calc__form__keyboard__key" type="button" (click)="addNumber('2')">2</button>
-      <button class="calc__form__keyboard__key" type="button" (click)="addNumber('3')">3</button>
+      <button class="calc__form__keyboard__key" type="button" (click)="addNumber('1')" id="button-1">1</button>
+      <button class="calc__form__keyboard__key" type="button" (click)="addNumber('2')" id="button-2">2</button>
+      <button class="calc__form__keyboard__key" type="button" (click)="addNumber('3')" id="button-3">3</button>
       <button class="calc__form__keyboard__key calc__form__keyboard__key--operations" type="button"
-        (click)="defineOperation('-')">-</button>
+        (click)="defineOperation('-')" id="button-subtraction">-</button>
 
-      <button class="calc__form__keyboard__key" type="button" (click)="addNumber('0')">0</button>
-      <button class="calc__form__keyboard__key" type="button" (click)="defineOperation('.')">.</button>
-      <button class="calc__form__keyboard__key" type="button" (click)="calculate()">=</button>
+      <button class="calc__form__keyboard__key" type="button" (click)="addNumber('0')" id="button-0">0</button>
+      <button class="calc__form__keyboard__key" type="button" (click)="defineOperation('.')" id="button-dot">.</button>
+      <button class="calc__form__keyboard__key" type="button" (click)="calculate()" id="button-equal">=</button>
       <button class="calc__form__keyboard__key calc__form__keyboard__key--operations" type="button"
-        (click)="defineOperation('+')">+</button>
+        (click)="defineOperation('+')" id="button-sum">+</button>
     </div>
   </form>
 </main>
